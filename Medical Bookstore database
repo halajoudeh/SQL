@@ -1,0 +1,27 @@
+--Creating a table of content.
+
+CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT, INTEGER, pages_no TEXT, price INTEGER) ;
+
+--Inseting items into table.
+
+INSERT INTO items VALUES (1, "biochemistry book", 2, 800, 70) ;
+INSERT INTO items VALUES (2, "physiology book", 1, 1000, 120) ;
+INSERT INTO items VALUES (3, "anatomy book", 1, 1200, 200) ;
+INSERT INTO items VALUES (4, "embryology book", 3, 500, 50) ;
+INSERT INTO items VALUES (5, "pharmacology book", 3, 600, 80) ;
+INSERT INTO items VALUES (6, "microbiology book", 3, 650, 70) ;
+INSERT INTO items VALUES (7, "pediatrics book", 5, 2000, 250) ;
+INSERT INTO items VALUES (8, "internal medicine book", 4, 1800, 200);
+INSERT INTO items VALUES (9, "surgery book", 4,1800, 180) ;
+INSERT INTO items VALUES (10, "obs gynae book", 5, 2000, 250);
+INSERT INTO items VALUES (11, "psychiatry book", 4, 860, 170);
+INSERT INTO items VALUES (12, "ethics book", 5, 300, 80);
+INSERT INTO items VALUES (13, "public health book", 5, 700, 180);
+INSERT INTO items VALUES (14, "palliative care book", 6, 400, 100);
+INSERT INTO items VALUES (15, "forensics book", 6, 500, 120);
+
+--Displaying the database order by price.
+SELECT * FROM items ORDER BY price;
+
+--Displaying the most expensive item.
+SELECT MAX (price) FROM items;
